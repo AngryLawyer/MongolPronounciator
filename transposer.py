@@ -2,7 +2,7 @@
 # -*- coding: UTF8 -*-
 
 class Transposer(object):
-    _table = {
+    _lookup_tablelookup_table  = {
         u'A':'A',
         u'Б':'B',
         u'В':'W',
@@ -73,8 +73,8 @@ class Transposer(object):
     }
 
     def lookup(self, char):
-        if char in self._table:
-            return self._table[char]
+        if char in self._lookup_table:
+            return self._lookup_table[char]
         return char
 
     def transpose_string(self, input_string):
