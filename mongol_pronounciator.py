@@ -39,7 +39,4 @@ class Pronounciator(object):
             else:
                 break
 
-
-
-engine = Pronounciator()
-engine.go()
+Pronounciator().go()
