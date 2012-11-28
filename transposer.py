@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF8 -*-
 
+import random
+
 class Transposer(object):
     _lookup_table = {
         u'A':'A',
@@ -79,3 +81,6 @@ class Transposer(object):
 
     def transpose_string(self, input_string):
         return ''.join(map(self.lookup, list(input_string)))
+
+    def random_pair(self):
+        return random.choice(self._lookup_table.items())
