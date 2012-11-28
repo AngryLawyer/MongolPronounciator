@@ -2,7 +2,7 @@
 # -*- coding: UTF8 -*-
 
 class Transposer(object):
-    _lookup_tablelookup_table  = {
+    _lookup_table = {
         u'A':'A',
         u'Б':'B',
         u'В':'W',
